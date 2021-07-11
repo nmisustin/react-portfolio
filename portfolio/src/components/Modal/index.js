@@ -18,8 +18,8 @@ function MyModal(props){
                 </Modal.Header>
                 <Modal.Body>{project.project.description}</Modal.Body>
                 <Modal.Footer>
-                    <a className='btn btn-primary text-light' href={project.project.github} target='_blank'>Github </a>
-                    <Website website={project}></Website>
+                    <a className='btn btn-primary text-light' href={project.github} target='_blank'>Github </a>
+                    <Website website= {project}></Website>
                     <button className='btn btn-success text-light' onClick={handleClose}>Close</button>
                 </Modal.Footer>
             </Modal>
