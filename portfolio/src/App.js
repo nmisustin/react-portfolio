@@ -24,10 +24,8 @@ function App() {
       <Header
         setContactSelected={setContactSelected}
         setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory}
-        contactSelected={contactSelected}
       ></Header>
-      <main>
+      <main className="mb-5">
         {render(currentCategory)}
       </main>
     </div>

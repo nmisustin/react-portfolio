@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import Modal from 'react-bootstrap/modal'
 import Website from '../Website';
 
@@ -19,7 +19,6 @@ function MyModal(props){
                 <Modal.Body>{project.project.description}</Modal.Body>
                 <Modal.Footer>
                     <a className='btn btn-primary text-light' href={project.project.github} target='_blank'>Github </a>
-                    {/* <a className='btn btn-primary text-light' href={project.project.website} target='_blank'>Website</a> */}
                     <Website website={project}></Website>
                     <button className='btn btn-success text-light' onClick={handleClose}>Close</button>
                 </Modal.Footer>

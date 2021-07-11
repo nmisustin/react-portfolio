@@ -12,21 +12,21 @@ function Contact(){
         setFormState({...formState, [e.target.name]: e.target.value});
     }
     return <div>
-        <h1>Contact Me</h1>
+        <h1 className='text-light'>Contact Me</h1>
         <form onSubmit={handleSubmit}>
-            <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="name" defaultValue={name} onChange={handleChange} />
+            <div className="input-group m-2">
+                <label htmlFor="name" className="input-group-text">Name:</label>
+                <input type="text" name="name" defaultValue={name} onChange={handleChange} className="form-control"/>
             </div>
-            <div>
-                <label htmlFor="email">Email address:</label>
-                <input type="email" name="email" defaultValue={email} onChange={handleChange} />
+            <div className="input-group m-2">
+                <label htmlFor="email" className='input-group-text'>Email address:</label>
+                <input type="email" name="email" defaultValue={email} onChange={handleChange} className="form-control" />
             </div>
-            <div>
-                <label htmlFor="message">Message:</label>
-                <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} />
+            <div className='input-group m-2'>
+                <label htmlFor="message" className="input-group-text">Message:</label>
+                <textarea name="message" rows="5" defaultValue={message} onChange={handleChange} className="form-control" />
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="btn btn-secondary text-light">Submit</button>
         </form>
     </div>
 }
