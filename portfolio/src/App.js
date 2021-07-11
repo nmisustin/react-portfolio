@@ -1,10 +1,35 @@
+import { useState } from 'react';
 import './App.scss';
 import Header from './components/Header';
+import About from './components/About';
+import Work from './components/Work';
+import Contact from './components/Contact';
 
 function App() {
+  const [currentCategory, setCurrentCategory] = useState('about')
+  const [contactSelected, setContactSelected] = useState(false)
+  function render(category){
+    if(category==='about'){
+      return <About></About>
+    }
+    else if(category==='my-work'){
+      return <Work></Work>
+    }
+    else if(category==='contact'){
+      return<Contact></Contact>
+    }
+  }
   return (
-    <div className="App">
-      <Header></Header>
+    <div className="App bg-dark">
+      <Header
+        setContactSelected={setContactSelected}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+      ></Header>
+      <main>
+        {render(currentCategory)}
+      </main>
     </div>
   );
 }
