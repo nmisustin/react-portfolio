@@ -6,10 +6,11 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container'
 
 function About(){
+    const imageUrl = process.env.PUBLIC_URL+'/img/bio-pic.jpg'
     return <Container>
         <Row>
         <Col xs={12} md={3} className="text-center">
-        <Image src='./img/bio-pic.jpg' style={{width: '100%'}} roundedCircle className="m-2"/>
+        <Image src={imageUrl} style={{width: '100%'}} roundedCircle className="m-2"/>
         </Col>
         <Col xs={12} md={9} className="d-flex justify-content-center">
         <Card border="secondary" style={{ width: '100%' }} className="m-5">           
