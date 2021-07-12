@@ -65,7 +65,7 @@ function Work(){
             description:'This is a basic social media website that uses MySQL to store data.',
             github:'https://github.com/nmisustin/tech-blog',
             website:'https://glacial-hollows-12407.herokuapp.com/',
-            image:'./img/tech-blog.jpg'
+            image:'img/tech-blog.jpg'
         }
     ]
     const featureProjects = [
@@ -74,14 +74,14 @@ function Work(){
             description: 'This is an application that uses microsoft facial recognition technology to look at the expressions on faces in images and create a quiz to help those who might have difficulty recognizing emotions.',
             github:'https://github.com/nmisustin/guesstures',
             website:'https://nmisustin.github.io/guesstures/',
-            image: './img/guesstures.jpg'
+            image: 'img/guesstures.jpg'
         },
         {
             name: 'RPS Chat',
             description: ' This is a chat app inspired by a classic childhood game.',
             github:'https://github.com/nmisustin/rps-chat',
             website:'https://fast-woodland-75585.herokuapp.com/',
-            image:'./img/rps-chat-screenshot.jpg'
+            image:'img/rps-chat-screenshot.jpg'
         }
     ]
     return <div className="text-center text-primary">
