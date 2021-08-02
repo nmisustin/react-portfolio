@@ -46,26 +46,26 @@ function Work(){
             name:'README Generator',
             description:'This is an application that allows the user to enter information about a project they are working on. The application will then generate a README.md with the information that it is given.',
             github:'https://github.com/nmisustin/readme-generator',
-            image:process.env.PUBLIC_URL+ '/img/readme-generator.jpg'
+            image:process.env.PUBLIC_URL+ '/img/readme-generator.JPG'
         },
         {
             name:'Team Profile Generator',
             description:'This is an application that allows the user to enter information about a team of people. Once the information is filled out the application will generate html to create a simple website with the team information.',
             github:'https://github.com/nmisustin/team-profile-generator',
-            image:process.env.PUBLIC_URL+ '/img/team-profile-generator.jpg'
+            image:process.env.PUBLIC_URL+ '/img/team-profile-generator.JPG'
         },
         {
             name:'Employee Tracker',
             description:'This application allows the user to enter information about employees and track what their job and salaries are.',
             github:'https://github.com/nmisustin/employee-tracker',
-            image:process.env.PUBLIC_URL+'/img/employee-tracker.jpg'
+            image:process.env.PUBLIC_URL+'/img/employee-tracker.JPG'
         },
         {
             name:'Tech Blog',
             description:'This is a basic social media website that uses MySQL to store data.',
             github:'https://github.com/nmisustin/tech-blog',
             website:'https://glacial-hollows-12407.herokuapp.com/',
-            image:process.env.PUBLIC_URL+'/img/tech-blog.jpg'
+            image:process.env.PUBLIC_URL+'/img/tech-blog.JPG'
         }
     ]
     const featureProjects = [
@@ -82,6 +82,13 @@ function Work(){
             github:'https://github.com/nmisustin/rps-chat',
             website:'https://fast-woodland-75585.herokuapp.com/',
             image:process.env.PUBLIC_URL+'/img/rps-chat-screenshot.jpg'
+        },
+        {
+            name : 'Picd-up',
+            description: 'This is a photo sharing app that is designed to allow photographers to display their work.',
+            github: 'https://github.com/Ronan-Codes/Project-3',
+            website: 'https://evening-refuge-82542.herokuapp.com/',
+            image: process.env.PUBLIC_URL+'/img/Picd-Up-Screenshot.JPG'
         }
     ]
     return <div className="text-center text-primary">
